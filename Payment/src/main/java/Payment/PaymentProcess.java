@@ -2,17 +2,19 @@ package Payment;
 
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.logging.Logger;
 
 import FoodOrder.FoodOrder;
 import FoodOrder.NotAvaiableException;
 
 public class PaymentProcess
 {
+	static final Logger l=Logger.getLogger("PaymentProcess");
 	public static void pay(int amount,int food_amount, String food,int ordertype)throws PaymentIncorrectException
 	{
 		if(ordertype==1)
 		{
-		  System.out.println("Your order is on the way!!!!");	
+			l.info("Your order is on the way!!!!");	
 		}
 		if(ordertype==2||ordertype==3)
 		{
@@ -21,7 +23,7 @@ public class PaymentProcess
 			
 			if(ordertype==2||ordertype==3)
 			{
-			System.out.println("Thank you!!Your Order on the way!!!");
+				l.info("Thank you!!Your Order on the way!!!");
 			}
 		}else {
 			
@@ -33,30 +35,30 @@ public class PaymentProcess
 
 	public static void main(String[] args) 
 	{
+		
 		FoodOrder re=new FoodOrder();
 		Scanner scan=new Scanner(System.in);
-		System.out.println("Enter your order here");
+		l.info("Enter your order here");
 		String food = scan.next();
-		System.out.println("Enter your Payment type");
-		System.out.println("1.Cash Payment");
-		System.out.println("2.Creditcard Payment");
-		System.out.println("3.Debitcard Payment");
-		System.out.println("Enter your Order Type");
+		l.info("Enter your Payment type");
+		l.info("1.Cash Payment");
+		l.info("2.Creditcard Payment");
+		l.info("3.Debitcard Payment");
 		int ordertype=scan.nextInt();
 				
 		switch(ordertype)
 		{
 		case 1:
-			 System.out.println("Cash Payment");
+			l.info("Cash Payment");
 			 break;
 		case 2:
-			System.out.println("Creditcard Payment");
+			l.info("Creditcard Payment");
 			break;
 		case 3:
-			System.out.println("Debitcard Payment");
+			l.info("Debitcard Payment");
 			break;
 		}
-        System.out.println("Payment Here:");
+		l.info("Payment Here:");
 		int amount=scan.nextInt();
 		
 		
