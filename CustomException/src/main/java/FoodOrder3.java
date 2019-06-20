@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
 
-public class FoodOrder
+public class FoodOrder3
 {
 	static void swiggy(String food)throws NotAvaiableException
 	{
-		String []Foodlist= {"idili"};
+		String []Foodlist= {"idili","dhosa","curd rice"};
 		
 	int i=0;
 		for(;i<Foodlist.length;i++)
@@ -14,7 +14,11 @@ public class FoodOrder
             {
 		
 			System.out.println("your order is booked!!");
-			break;
+			if(Foodlist[i+1].contains(food))
+			{
+				System.out.println("your order is booked!!");
+
+			}
 		}
 		else
 		{
@@ -24,9 +28,10 @@ public class FoodOrder
 	}
 	public static void main(String []args)
 	{
-		FoodOrder ref=new FoodOrder();
+		FoodOrder3 ref=new FoodOrder3();
 		
 		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter your FoodOrder");
 		String food=sc.next();
 		
 			try
