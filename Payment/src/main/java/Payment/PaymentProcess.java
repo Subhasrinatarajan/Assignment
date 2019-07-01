@@ -7,8 +7,14 @@ import java.util.logging.Logger;
 import FoodOrder.FoodOrder;
 import FoodOrder.NotAvaiableException;
 
-public class PaymentProcess
+public class PaymentProcess implements Runnable
 {
+	Thread application;
+	PaymentProcess()
+	{
+		application=new Thread();
+		
+	}
 	static final Logger l=Logger.getLogger("PaymentProcess");
 	public static void pay(int amount,int food_amount, String food,int ordertype)throws PaymentIncorrectException
 	{
@@ -26,8 +32,6 @@ public class PaymentProcess
 				l.info("Thank you!!Your Order on the way!!!");
 			}
 		}else {
-			
-			
 				throw new PaymentIncorrectException("Please check your balance!!!");
 		}
 		}
@@ -81,6 +85,11 @@ public class PaymentProcess
 		{
 			e.printStackTrace();
 		}
+		
+	}
+
+	public void run() {
+		// TODO Auto-generated method stub
 		
 	}
 }

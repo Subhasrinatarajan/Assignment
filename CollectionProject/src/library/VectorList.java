@@ -1,13 +1,14 @@
-package collection;
+package library;
 
 import java.util.Scanner;
 import java.util.Vector;
 
 
-public class VectorList
+public class VectorList extends Thread
 { 
 	 
-	 public static void main(String[] args)
+	 public static void main(String[] args) 
+	 
 	 {
 	 Vector<String> vector = new Vector<String>(6);
 	 Scanner scan=new Scanner(System.in);
@@ -22,20 +23,34 @@ public class VectorList
 	    vector.add("Train your Brain");
 	    vector.add("Know your future");
 	 System.out.println("Checking Books Avaiability");
+	 try {
+		Thread.sleep(2000);
+	} catch (InterruptedException e1) {
+		// TODO Auto-generated catch block
+		e1.printStackTrace();
+	}
 	  if(vector.isEmpty())
 	  {
 		  System.out.println("Sorry!!Books Not Avaiable Here");
 	  }else
 	  {
-		  System.out.println("Continue Order");
-		  System.out.println("If yes enter 1st option value");
-		  System.out.println("1.true");
-		  System.out.println("2.false");
-		  boolean value=scan.nextBoolean();
 		  while(vector.isEmpty()==false)
 		  {
+			  Scanner scan1=new Scanner(System.in);
+			  System.out.println("Continue Order");
+			  System.out.println("If yes enter 1st option value");
+			  System.out.println("1.true");
+			  System.out.println("2.false");
+			  boolean value=scan.nextBoolean();
+ 
 		  if(value)
 		  {
+			  try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) 
+			  {
+				e.printStackTrace();
+			  }
 		  System.out.println("Only Avaiable Books categories are");
 		  System.out.println("1.Computer language Oriented Books");
 		  System.out.println("2.Medical Oriented Books");
@@ -143,6 +158,7 @@ public class VectorList
 		    {
 		       System.out.println(vector.get(i));
 		    }
+		 
 		  }
 	  }
 	 }
