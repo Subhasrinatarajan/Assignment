@@ -16,9 +16,9 @@ import com.atmecs.atmecsqa.utils.Constants;
 
 public class Base 
 {
-	public WebDriver driver;
+	public static WebDriver driver;
 	public static Properties properties;
-    public void readProperties()
+    public static void readProperties()
     {
     	String path = Constants.PROJECT_BASE_PATH+"/resources/Config.properties";
     	properties = new Properties();
@@ -33,7 +33,7 @@ public class Base
 			e.printStackTrace();
 		}
     }
-	public void openBrowser() 
+	public static void openBrowser() 
 	{
 		readProperties();
 		String chromepath=Constants.PROJECT_BASE_PATH+properties.getProperty("ChromeDriverPath");

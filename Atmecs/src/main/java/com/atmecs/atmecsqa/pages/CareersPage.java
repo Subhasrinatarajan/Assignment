@@ -1,34 +1,49 @@
 package com.atmecs.atmecsqa.pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.testng.annotations.Test;
 
+import com.atmecs.atmecsqa.helper.BackToHomePage;
 import com.atmecs.atmecsqa.testbase.Base;
+import com.atmecs.atmecsqa.utils.ConfigReader;
+import com.atmecs.atmecsqa.utils.Constants;
+import com.atmecs.atmecsqa.utils.Utils;
 
-public class CareersPage extends Base
-{
-	//@Test(priority=1)
-	public void getCareersPage() {
+public class CareersPage extends Base {
+	Properties careersProperties;
+
+	// @Test(priority=1)
+	public void getCareersPage() throws IOException {
+		careersProperties = ConfigReader.loadProperty(Constants.CAREERSWEBELEMENT_FILE);
+		String careersHomePage = careersProperties.getProperty("careersHomePage");
+
 		openBrowser();
-		driver.findElement(By.xpath("(//a[@href=\"http://www.atmecs.com/careers/\"])[1]")).click();
-		driver.findElement(By.xpath("//a[@property=\"v:title\"]")).click();
+		Utils.ignoreClickInterceptAndClickOnElement(driver, careersHomePage);
+		BackToHomePage.backToHome();
 	}
-	//@Test(priority=2)
-	public void hyderabadHomePage()
-	{
-		driver.findElement(By.xpath("(//a[@href=\"http://www.atmecs.com/careers/\"])[1]")).click();
-		driver.findElement(By.xpath("//a[@href=\"http://www.atmecs.com/hyderabad-careers/\"]")).click();
-	}
-	/*public void toSearchingJobTitles() throws InterruptedException
-	{
-	  //driver.switchTo().frame("search-3");
-		//Thread.sleep(5000);
-	  //driver.findElement(By.xpath("//*[@id=\"s\"]")).click();
-	  //driver.findElement(By.xpath("//*[@id=\"s\"]")).sendKeys("java developer");
-	  driver.findElement(By.id("searchsubmit")).click();
-	  driver.findElement(By.xpath("//a[@property=\"v:title\"]")).click();
 
-	}*/
-    
+	// @Test(priority=2)
+	public void hyderabadCareerHomePage() throws IOException {
+		String careersHomePage = careersProperties.getProperty("careersHomePage");
+		Utils.ignoreClickInterceptAndClickOnElement(driver, careersHomePage);
+
+		String hyderabadCareerHomePage = careersProperties.getProperty("hyderabadCareerHomePage");
+		Utils.ignoreClickInterceptAndClickOnElement(driver, hyderabadCareerHomePage);
+	}
+
+	// @Test(priority=3)
+	public void bangaloreCareerHomePage() throws IOException {
+		String bangaloreCareerHomePage = careersProperties.getProperty("bangaloreCareerHomePage");
+		Utils.ignoreClickInterceptAndClickOnElement(driver, bangaloreCareerHomePage);
+	}
+
+	// @Test(priority=4)
+	public void chennaiCareerHomePage() throws IOException {
+
+		String chennaiCareerHomePage = careersProperties.getProperty("chennaiCareerHomePage");
+		Utils.ignoreClickInterceptAndClickOnElement(driver, chennaiCareerHomePage);
+		BackToHomePage.backToHome();
+	}
 }

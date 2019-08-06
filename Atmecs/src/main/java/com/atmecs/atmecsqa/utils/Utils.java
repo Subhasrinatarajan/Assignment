@@ -15,24 +15,25 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.atmecs.atmecsqa.testbase.Base;
 
-public class Utils 
+public class Utils extends Base
 {
-	public void explicitWaitClickOperation(WebDriver driver,final String xpath) 
-  {
-		
-		WebDriverWait wait = new WebDriverWait(driver, 10);
-		 
-		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
-		element.click();
-				
- }
-	Properties properties;
+		@SuppressWarnings("deprecation")
+		public static void ignoreClickInterceptAndClickOnElement(WebDriver driver, final String xpath)
+		{
+			
+			FluentWait<WebDriver> fluentWait = new FluentWait<WebDriver>(driver)
+			.ignoring(ElementClickInterceptedException.class).pollingEvery(1, TimeUnit.SECONDS)
+			.withTimeout(30, TimeUnit.SECONDS);
 
-	public void backToHome() throws IOException 
-	{
-		properties = ConfigReader.loadProperty(Constants.HOMEPAGEWEBELEMENT_FILE);
-		String backToHomePage = properties.getProperty("backToHomePage");
-		Base base = new Base();
-		explicitWaitClickOperation(base.driver, backToHomePage);
-	}
+			fluentWait.until(new Function<WebDriver, Boolean>() {
+			public Boolean apply(WebDriver driver) {
+			WebElement element = driver.findElement(By.xpath(xpath));
+			element.click();
+			return true;
+			}
+			});
+			}
+				
+ 
+	
 }

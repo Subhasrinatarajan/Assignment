@@ -33,7 +33,10 @@ public class Constants extends Base
 	
 	public final static String HOMEPAGE_HOME = USERS_HOME + "resources" + File.separator+"locators"+File.separator;
 	public final static String HOMEPAGEWEBELEMENT_FILE = HOMEPAGE_HOME  + "homePageWebElement.properties";
-
+    
+	public final static String HYDERABADCAREERLIST_HOME = USERS_HOME + "resources" + File.separator+"locators"+File.separator;
+	public final static String HYDERABADCAREERLISTWEBELEMENT_FILE = HYDERABADCAREERLIST_HOME + "hyderabadCareersList.properties";
+	
 	public final static String IEBROWSER_HOME = USERS_HOME + "lib" + File.separator;
 	public final static String IEBROWSERDRIVER_FILE = IEBROWSER_HOME + "IEDriverServer.exe";
 	

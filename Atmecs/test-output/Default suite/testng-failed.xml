@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.atmecs.atmecsqa.pages.PartnersPage">
+      <class name="com.atmecs.atmecsqa.helper.HyderabadCareersList">
         <methods>
-          <include name="gotopartners"/>
+          <include name="get"/>
         </methods>
-      </class> <!-- com.atmecs.atmecsqa.pages.PartnersPage -->
+      </class> <!-- com.atmecs.atmecsqa.helper.HyderabadCareersList -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
