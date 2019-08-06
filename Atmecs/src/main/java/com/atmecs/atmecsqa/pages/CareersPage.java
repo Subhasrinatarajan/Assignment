@@ -5,9 +5,9 @@ import java.util.Properties;
 
 import org.testng.annotations.Test;
 
-import com.atmecs.atmecsqa.helper.BackToHomePage;
+import com.atmecs.atmecsqa.helper.ConfigReader;
 import com.atmecs.atmecsqa.testbase.Base;
-import com.atmecs.atmecsqa.utils.ConfigReader;
+import com.atmecs.atmecsqa.utils.BackToHomePage;
 import com.atmecs.atmecsqa.utils.Constants;
 import com.atmecs.atmecsqa.utils.Utils;
 

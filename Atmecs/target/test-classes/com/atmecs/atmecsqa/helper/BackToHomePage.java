@@ -16,11 +16,11 @@ public class BackToHomePage extends Base {
 	static Properties backToHomeProperties;
 
 	public static void backToHome() throws IOException {
-		
+
 		backToHomeProperties = ConfigReader.loadProperty(Constants.HOMEPAGEWEBELEMENT_FILE);
-		
-	   //	Base base = new Base();
-	
+
+		// Base base = new Base();
+
 		String backToHomePage = backToHomeProperties.getProperty("backToHomePage");
 		Utils.ignoreClickInterceptAndClickOnElement(driver, backToHomePage);
 	}
