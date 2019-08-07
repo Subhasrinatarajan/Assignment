@@ -3,12 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.atmecs.atmecsqa.testscript.ContactPageScript"/>
-      <class name="com.atmecs.atmecsqa.testscript.PartnersScript"/>
-      <class name="com.atmecs.atmecsqa.testscript.CareersPageScript"/>
-      <class name="com.atmecs.atmecsqa.helper.HyderabadCareersList"/>
-      <class name="com.atmecs.atmecsqa.testscript.HomePageScript"/>
-      <class name="com.atmecs.atmecsqa.testscript.AboutUsScript"/>
+      <class name="com.atmecs.atmecsqa.testscript.AllPages"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

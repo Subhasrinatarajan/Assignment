@@ -1,17 +1,15 @@
 package com.atmecs.atmecsqa.pages;
 
-import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 import com.atmecs.atmecsqa.testbase.Base;
+import com.atmecs.atmecsqa.utils.Utils;
 
 public class PartnersPage extends Base {
-    
-	
-	public void getPartnersPage() {
-		openBrowser();
-		driver.findElement(By.xpath("//a[@href=\"http://www.atmecs.com/partners/\"]")).click();
-		driver.findElement(By.xpath("//a[@property=\"v:title\"]")).click();
-		driver.close();
+
+	public static void partnersScript(WebDriver driver, final String xpath) {
+		// Partners
+		Utils.ignoreClickInterceptAndClickOnElement(driver, xpath);
 	}
 }

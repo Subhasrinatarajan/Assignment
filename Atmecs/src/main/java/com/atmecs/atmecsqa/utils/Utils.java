@@ -33,7 +33,4 @@ public class Utils extends Base
 			}
 			});
 			}
-				
- 
-	
 }

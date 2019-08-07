@@ -1,50 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="52" started-at="2019-08-06T11:03:38Z" finished-at="2019-08-06T11:03:38Z">
+  <suite name="Default suite" duration-ms="13191" started-at="2019-08-07T10:21:17Z" finished-at="2019-08-07T10:21:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="52" started-at="2019-08-06T11:03:38Z" finished-at="2019-08-06T11:03:38Z">
-      <class name="com.atmecs.atmecsqa.helper.HyderabadCareersList">
-        <test-method status="FAIL" signature="get()[pri:0, instance:com.atmecs.atmecsqa.helper.HyderabadCareersList@4501b7af]" name="get" duration-ms="16" started-at="2019-08-06T11:03:38Z" finished-at="2019-08-06T11:03:38Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.atmecs.atmecsqa.testbase.Base.openBrowser(Base.java:42)
-at com.atmecs.atmecsqa.helper.HyderabadCareersList.get(HyderabadCareersList.java:26)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+    <test name="Default test" duration-ms="13191" started-at="2019-08-07T10:21:17Z" finished-at="2019-08-07T10:21:31Z">
+      <class name="com.atmecs.atmecsqa.testscript.AboutUs">
+        <test-method status="PASS" signature="getAboutUsPage()[pri:0, instance:com.atmecs.atmecsqa.testscript.AboutUs@523884b2]" name="getAboutUsPage" duration-ms="13156" started-at="2019-08-07T10:21:17Z" finished-at="2019-08-07T10:21:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- get -->
-      </class> <!-- com.atmecs.atmecsqa.helper.HyderabadCareersList -->
+        </test-method> <!-- getAboutUsPage -->
+      </class> <!-- com.atmecs.atmecsqa.testscript.AboutUs -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

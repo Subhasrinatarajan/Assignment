@@ -1,37 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-
 <suite name="Suite">
-	<test name="chrome">
-
-		<parameter name="browser" value="chrome" />
-
-		<classes>
-
-
-			<class name="com.atmecs.atmecsqa.testscript.partners" />
-		</classes>
-	</test>
-	<test name="Firefox">
-
-		<parameter name="browser" value="firefox" />
-
-		<classes>
-			<class name="com.atmecs.atmecsqa.testscript.partners" />
-		</classes>
-
-	</test>
-
-	<test name="IE">
-
-		<parameter name="browser" value="ie" />
-
-		<classes>
-
-
-			<class name="com.atmecs.atmecsqa.testscript.partners" />
-		</classes>
-
-	</test>
-
-</suite>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.atmecs.atmecsqa.testscript.AllPages"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
