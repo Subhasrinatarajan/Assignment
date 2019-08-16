@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.atmecs.atmecsqa.testscript.AboutUs">
+      <class name="com.atmecs.toolsqademoshop.testscript.ShopAccount">
         <methods>
-          <include name="getAboutUsPage"/>
+          <include name="quitBrowser"/>
+          <include name="getaccountprotal"/>
+          <include name="openBrowser"/>
         </methods>
-      </class> <!-- com.atmecs.atmecsqa.testscript.AboutUs -->
+      </class> <!-- com.atmecs.toolsqademoshop.testscript.ShopAccount -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
