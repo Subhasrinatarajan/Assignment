@@ -18,20 +18,5 @@ import com.atmecs.toolsqademoshop.testbase.TestBase;
 
 public class Utils extends TestBase
 {
-		@SuppressWarnings("deprecation")
-		public static void click_operation(WebDriver driver, final String xpath)
-		{
-			
-			FluentWait<WebDriver> fluentWait = new FluentWait<WebDriver>(driver)
-			.ignoring(ElementClickInterceptedException.class).pollingEvery(1, TimeUnit.SECONDS)
-			.withTimeout(30, TimeUnit.SECONDS);
-
-			fluentWait.until(new Function<WebDriver, Boolean>() {
-			public Boolean apply(WebDriver driver) {
-			WebElement element = driver.findElement(By.xpath(xpath));
-			element.click();
-			return true;
-			}
-			});
-			}
+		
 }

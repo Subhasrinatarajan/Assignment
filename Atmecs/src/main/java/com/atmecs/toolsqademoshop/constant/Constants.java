@@ -43,4 +43,6 @@ public class Constants extends TestBase {
 	
 	public final static String VALIDATEPATH_HOME = USERS_HOME + "resources" + File.separator+"locators"+File.separator;
 	public final static String VALIDATEPATH_FILE = VALIDATEPATH_HOME + "validatepath.properties";
+	public final static String LOGFILEPATH_HOME = USERS_HOME + "resources" + File.separator+"locators"+File.separator;
+	public final static String LOGFILEPATH_FILE = LOGFILEPATH_HOME + "log4j.properties";
 }

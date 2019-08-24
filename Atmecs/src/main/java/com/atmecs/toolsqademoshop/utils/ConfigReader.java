@@ -32,6 +32,13 @@ public class ConfigReader extends Constants
 	String filedata = properties.getProperty(data);
 	return filedata;
 	}
+
+	public static void configure(String logfilepathFile) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
 	
 	
 }
