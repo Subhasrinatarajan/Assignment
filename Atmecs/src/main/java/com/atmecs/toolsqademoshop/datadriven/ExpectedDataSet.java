@@ -9,12 +9,14 @@ import com.atmecs.toolsqademoshop.utils.ConfigReader;
 
 /**
  * @author Subhasri.Natarajan
- *
+ * @category validation dataset
  */
 public class ExpectedDataSet extends TestBase {
 	public static Properties properties;
 	public static String shop_hmpg;
 	public static String pinkproduct;
+	public static String firstProductCost;
+	public static String secondProductCost;
 
 	public static void getdata() {
 		try {
@@ -38,7 +40,7 @@ public class ExpectedDataSet extends TestBase {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 	}
 
 	public static String getPinkproduct() {
@@ -52,7 +54,7 @@ public class ExpectedDataSet extends TestBase {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 	}
 
 	public static void main(String[] args) {
@@ -62,4 +64,3 @@ public class ExpectedDataSet extends TestBase {
 	}
 
 }
-

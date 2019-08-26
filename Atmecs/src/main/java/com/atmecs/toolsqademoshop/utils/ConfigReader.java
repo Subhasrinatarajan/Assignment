@@ -1,14 +1,10 @@
 package com.atmecs.toolsqademoshop.utils;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
-
+import org.openqa.selenium.By;
 import com.atmecs.toolsqademoshop.constant.Constants;
-
-import java.io.File;
 import java.io.FileReader;
 
 
@@ -27,15 +23,21 @@ public class ConfigReader extends Constants
 	return properties;
 	}
 
-	public static String getData(String data) throws IOException {
+	public static String getData(String by) throws IOException {
 
-	String filedata = properties.getProperty(data);
+	String filedata = properties.getProperty(by);
 	return filedata;
 	}
 
 	public static void configure(String logfilepathFile) {
 		// TODO Auto-generated method stub
 		
+	}
+	
+
+	public static String setData(String by) throws IOException {
+		String fileInput=driver.findElement(By.xpath(properties.getProperty(by))).getText();
+		return fileInput;
 	}
 
 

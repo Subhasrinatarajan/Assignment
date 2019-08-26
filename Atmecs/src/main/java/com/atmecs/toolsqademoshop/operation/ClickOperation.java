@@ -8,10 +8,10 @@ import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.FluentWait;
-import org.testng.annotations.Test;
+
 
 import com.atmecs.toolsqademoshop.testbase.TestBase;
-import com.atmecs.toolsqademoshop.utils.Utils;
+
 
 public class ClickOperation extends TestBase {
 

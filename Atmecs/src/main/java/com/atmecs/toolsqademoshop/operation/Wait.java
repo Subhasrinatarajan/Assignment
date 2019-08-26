@@ -1,7 +1,6 @@
 package com.atmecs.toolsqademoshop.operation;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -11,8 +10,8 @@ public class Wait extends TestBase
 {
     public static void ignoreTimeOut(String xpath)
     {
-    	WebDriverWait wait = new WebDriverWait(driver, 10);
+    	WebDriverWait wait = new WebDriverWait(driver, 3000);
     	 
-    	wait.until(ExpectedConditions.elementToBeClickable(By.id(xpath)));
+    	wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
     }
 }

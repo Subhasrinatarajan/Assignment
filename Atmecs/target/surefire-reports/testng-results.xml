@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="252454" started-at="2019-08-26T08:39:54Z" finished-at="2019-08-26T08:44:07Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="252454" started-at="2019-08-26T08:39:54Z" finished-at="2019-08-26T08:44:07Z">
+      <class name="com.atmecs.toolsqademoshop.testscript.PurchasedProductGrandTotalValidationAfterRemovalOneProduct">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.atmecs.toolsqademoshop.testscript.PurchasedProductGrandTotalValidationAfterRemovalOneProduct@4909b8da]" name="openBrowser" is-config="true" duration-ms="67982" started-at="2019-08-26T08:42:33Z" finished-at="2019-08-26T08:43:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="purchasedProdGrandTotalValidationAfterRemovalOneProduct()[pri:0, instance:com.atmecs.toolsqademoshop.testscript.PurchasedProductGrandTotalValidationAfterRemovalOneProduct@4909b8da]" name="purchasedProdGrandTotalValidationAfterRemovalOneProduct" duration-ms="25711" started-at="2019-08-26T08:43:41Z" finished-at="2019-08-26T08:44:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- purchasedProdGrandTotalValidationAfterRemovalOneProduct -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.atmecs.toolsqademoshop.testscript.PurchasedProductGrandTotalValidationAfterRemovalOneProduct@4909b8da]" name="quitBrowser" is-config="true" duration-ms="12" started-at="2019-08-26T08:44:07Z" finished-at="2019-08-26T08:44:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- com.atmecs.toolsqademoshop.testscript.PurchasedProductGrandTotalValidationAfterRemovalOneProduct -->
+      <class name="com.atmecs.toolsqademoshop.testscript.PurchasedProductGrandTotalValidation">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.atmecs.toolsqademoshop.testscript.PurchasedProductGrandTotalValidation@1936f0f5]" name="openBrowser" is-config="true" duration-ms="68693" started-at="2019-08-26T08:39:54Z" finished-at="2019-08-26T08:41:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="purchaseblack_tshirt()[pri:0, instance:com.atmecs.toolsqademoshop.testscript.PurchasedProductGrandTotalValidation@1936f0f5]" name="purchaseblack_tshirt" duration-ms="16598" started-at="2019-08-26T08:41:03Z" finished-at="2019-08-26T08:41:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- purchaseblack_tshirt -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.atmecs.toolsqademoshop.testscript.PurchasedProductGrandTotalValidation@1936f0f5]" name="quitBrowser" is-config="true" duration-ms="11" started-at="2019-08-26T08:41:20Z" finished-at="2019-08-26T08:41:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- com.atmecs.toolsqademoshop.testscript.PurchasedProductGrandTotalValidation -->
+      <class name="com.atmecs.toolsqademoshop.testscript.ShopAccount">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.atmecs.toolsqademoshop.testscript.ShopAccount@6615435c]" name="openBrowser" is-config="true" duration-ms="67821" started-at="2019-08-26T08:41:20Z" finished-at="2019-08-26T08:42:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="getaccountprotal()[pri:0, instance:com.atmecs.toolsqademoshop.testscript.ShopAccount@6615435c]" name="getaccountprotal" duration-ms="5568" started-at="2019-08-26T08:42:28Z" finished-at="2019-08-26T08:42:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getaccountprotal -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.atmecs.toolsqademoshop.testscript.ShopAccount@6615435c]" name="quitBrowser" is-config="true" duration-ms="10" started-at="2019-08-26T08:42:33Z" finished-at="2019-08-26T08:42:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- com.atmecs.toolsqademoshop.testscript.ShopAccount -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

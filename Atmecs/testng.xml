@@ -3,8 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.atmecs.toolsqademoshop.testscript.PurchaseGirlsTop"/>
+      <class name="com.atmecs.toolsqademoshop.testscript.PurchasedProductGrandTotalValidation"/>
       <class name="com.atmecs.toolsqademoshop.testscript.ShopAccount"/>
+      <class name="com.atmecs.toolsqademoshop.testscript.PurchasedProductGrandTotalValidationAfterRemovalOneProduct"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

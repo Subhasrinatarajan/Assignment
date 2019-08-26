@@ -8,9 +8,9 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelDataReader {
 
-	XSSFWorkbook wb;
+	static XSSFWorkbook wb;
 
-	XSSFSheet sheet1;
+	static XSSFSheet productNameSheet;
 
 	public ExcelDataReader(String excelPath) {
 
@@ -24,10 +24,10 @@ public class ExcelDataReader {
 
 	}
 
-	public String getData(int sheetNumber, int row, int column) {
+	public  String getKeyValue(int sheetNumber, int row, int column) {
 
-		sheet1 = wb.getSheetAt(sheetNumber);
-		String data = sheet1.getRow(row).getCell(column).getStringCellValue();
+		productNameSheet = wb.getSheetAt(sheetNumber);
+		String data = productNameSheet.getRow(row).getCell(column).getStringCellValue();
 		return data;
 	}
 
