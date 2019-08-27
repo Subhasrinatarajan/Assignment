@@ -1,4 +1,4 @@
-package com.atmecs.toolsqademoshop.constant;
+package com.atmecs.toolsqademoshop.constants;
 
 import java.util.concurrent.TimeUnit;
 import java.util.function.Function;

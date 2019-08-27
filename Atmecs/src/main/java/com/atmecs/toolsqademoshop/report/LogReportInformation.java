@@ -2,7 +2,7 @@ package com.atmecs.toolsqademoshop.report;
 
 import java.util.logging.Logger;
 
-import com.atmecs.toolsqademoshop.constant.Constants;
+import com.atmecs.toolsqademoshop.constants.Constants;
 import com.atmecs.toolsqademoshop.utils.ConfigReader;
 
 public class LogReportInformation {

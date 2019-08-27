@@ -24,7 +24,7 @@ public class ExcelDataReader {
 
 	}
 
-	public  String getKeyValue(int sheetNumber, int row, int column) {
+	public String getKeyValue(int sheetNumber, int row, int column) {
 
 		productNameSheet = wb.getSheetAt(sheetNumber);
 		String data = productNameSheet.getRow(row).getCell(column).getStringCellValue();

@@ -1,13 +1,14 @@
 package com.atmecs.toolsqademoshop.pages;
 
 import java.io.IOException;
-import com.atmecs.toolsqademoshop.constant.Constants;
-import com.atmecs.toolsqademoshop.operation.EnterOperation;
-import com.atmecs.toolsqademoshop.operation.SearchProduct;
+
+import com.atmecs.toolsqademoshop.constants.Constants;
+import com.atmecs.toolsqademoshop.constants.GetDataSet;
+import com.atmecs.toolsqademoshop.helper.EnterOperation;
+import com.atmecs.toolsqademoshop.helper.SearchProduct;
 import com.atmecs.toolsqademoshop.testbase.TestBase;
 import com.atmecs.toolsqademoshop.utils.ConfigReader;
 import com.atmecs.toolsqademoshop.utils.ExcelDataReader;
-import com.atmecs.toolsqademoshop.utils.GetDataSet;
 
 public class GetProduct extends TestBase
 {

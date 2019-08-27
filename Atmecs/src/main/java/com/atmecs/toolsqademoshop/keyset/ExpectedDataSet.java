@@ -1,9 +1,9 @@
-package com.atmecs.toolsqademoshop.datadriven;
+package com.atmecs.toolsqademoshop.keyset;
 
 import java.io.IOException;
 import java.util.Properties;
 
-import com.atmecs.toolsqademoshop.constant.Constants;
+import com.atmecs.toolsqademoshop.constants.Constants;
 import com.atmecs.toolsqademoshop.testbase.TestBase;
 import com.atmecs.toolsqademoshop.utils.ConfigReader;
 

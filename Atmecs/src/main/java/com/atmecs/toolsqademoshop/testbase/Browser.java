@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
-import com.atmecs.toolsqademoshop.constant.Constants;
+import com.atmecs.toolsqademoshop.constants.Constants;
 import com.atmecs.toolsqademoshop.utils.ConfigReader;
 
 

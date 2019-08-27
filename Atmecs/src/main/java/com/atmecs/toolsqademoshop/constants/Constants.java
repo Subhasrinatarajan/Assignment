@@ -1,4 +1,4 @@
-package com.atmecs.toolsqademoshop.constant;
+package com.atmecs.toolsqademoshop.constants;
 
 import java.io.File;
 
@@ -10,7 +10,7 @@ public class Constants extends TestBase {
 	public final static long PAGE_LODE_TIMEOUT = 3;
 	public final static long IMPLICIT_WAIT = 30;
 
-	public final static String EXPECTEDTITLE_HOME = USERS_HOME + "resources"+ File.separator;
+	public final static String EXPECTEDTITLE_HOME = USERS_HOME + "resources"+ File.separator+"data"+File.separator;
 	public final static String EXPECTEDTITLE_FILE = EXPECTEDTITLE_HOME + "expectedTile.properties";
 
 	public final static String CHROMEBROWSER_HOME = USERS_HOME + "lib" + File.separator;
@@ -32,8 +32,8 @@ public class Constants extends TestBase {
 	public final static String ACCOUNT_HOME = USERS_HOME + "resources" + File.separator+"locators"+File.separator;
 	public final static String ACCOUNT_FILE = ACCOUNT_HOME + "shopaccount.properties";
 	
-	public final static String SHOPHOMEPAGE_HOME = USERS_HOME + "resources" + File.separator+"locators"+File.separator;
-	public final static String SHOPHOMEPAGE_FILE = SHOPHOMEPAGE_HOME + "shopaccount.properties";
+	/*public final static String SHOPHOMEPAGE_HOME = USERS_HOME + "resources" + File.separator+"locators"+File.separator;
+	public final static String SHOPHOMEPAGE_FILE = SHOPHOMEPAGE_HOME + "shopaccount.properties";*/
 	
 	public final static String PURCHASE_HOME = USERS_HOME + "resources" + File.separator+"locators"+File.separator;
 	public final static String PURCHASE_FILE = PURCHASE_HOME + "purchase.properties";

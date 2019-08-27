@@ -1,16 +1,13 @@
-package com.atmecs.automation.commonutils;
+package com.atmecs.toolsqademoshop.constants;
 
 
 import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
 import org.openqa.selenium.support.ui.FluentWait;
-
 
 
 public class PageActionGetText 

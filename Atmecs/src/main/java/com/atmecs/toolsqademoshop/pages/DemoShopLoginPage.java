@@ -2,10 +2,10 @@ package com.atmecs.toolsqademoshop.pages;
 
 import java.io.IOException;
 
-import com.atmecs.toolsqademoshop.operation.ClickOperation;
+import com.atmecs.toolsqademoshop.constants.GetDataSet;
+import com.atmecs.toolsqademoshop.helper.ClickOperation;
 import com.atmecs.toolsqademoshop.testbase.TestBase;
 import com.atmecs.toolsqademoshop.utils.ConfigReader;
-import com.atmecs.toolsqademoshop.utils.GetDataSet;
 
 public class DemoShopLoginPage extends TestBase
 {

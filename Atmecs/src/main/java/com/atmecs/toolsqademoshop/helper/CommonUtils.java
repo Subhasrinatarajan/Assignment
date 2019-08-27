@@ -1,11 +1,11 @@
-package com.atmecs.toolsqademoshop.utils;
+package com.atmecs.toolsqademoshop.helper;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import com.atmecs.toolsqademoshop.constant.Constants;
-import com.atmecs.toolsqademoshop.operation.ClickOperation;
+import com.atmecs.toolsqademoshop.constants.Constants;
 import com.atmecs.toolsqademoshop.testbase.TestBase;
+import com.atmecs.toolsqademoshop.utils.ConfigReader;
 
 public class CommonUtils extends TestBase
 {

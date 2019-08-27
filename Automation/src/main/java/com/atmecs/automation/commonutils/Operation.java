@@ -1,5 +1,7 @@
 package com.atmecs.automation.commonutils;
 
+
+
 import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 
@@ -15,6 +17,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.atmecs.automation.testsuite.TestBase;
+
+
 
 
 public class Operation extends TestBase{
@@ -102,5 +106,9 @@ public class Operation extends TestBase{
     	WebDriverWait wait = new WebDriverWait(driver, 10);
     	wait.until(ExpectedConditions.elementToBeClickable(By.id(xpath)));
     }
+	
+	
+	
+   
 
 }

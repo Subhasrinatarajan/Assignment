@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.atmecs.toolsqademoshop.testscript.ShopAccount">
+      <class name="com.atmecs.toolsqademoshop.testscript.PurchasedProductGrandTotalValidation">
         <methods>
+          <include name="purchaseblack_tshirt"/>
           <include name="quitBrowser"/>
-          <include name="getaccountprotal"/>
           <include name="openBrowser"/>
         </methods>
-      </class> <!-- com.atmecs.toolsqademoshop.testscript.ShopAccount -->
+      </class> <!-- com.atmecs.toolsqademoshop.testscript.PurchasedProductGrandTotalValidation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

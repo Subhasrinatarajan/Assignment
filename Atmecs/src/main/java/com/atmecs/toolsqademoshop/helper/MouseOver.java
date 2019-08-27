@@ -1,4 +1,4 @@
-package com.atmecs.toolsqademoshop.operation;
+package com.atmecs.toolsqademoshop.helper;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

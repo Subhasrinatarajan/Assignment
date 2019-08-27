@@ -1,4 +1,4 @@
-package com.atmecs.toolsqademoshop.utils;
+package com.atmecs.toolsqademoshop.helper;
 
 import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
@@ -9,10 +9,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.FluentWait;
 
-public class GetDataSet 
-{
+
+import com.atmecs.toolsqademoshop.testbase.TestBase;
+
+
+public class ClickOperation extends TestBase {
+
 	@SuppressWarnings("deprecation")
-	public static void getDataSet(WebDriver driver, final String xpath,final String value)
+	public static void click_operation(WebDriver driver, final String xpath)
 	{
 		
 		FluentWait<WebDriver> fluentWait = new FluentWait<WebDriver>(driver)
@@ -22,10 +26,14 @@ public class GetDataSet
 		fluentWait.until(new Function<WebDriver, Boolean>() {
 		public Boolean apply(WebDriver driver) {
 		WebElement element = driver.findElement(By.xpath(xpath));
-		element.sendKeys(value);
+		element.click();
 		return true;
 		}
 		});
 		}
-	
+	public static void pg_click_opr(WebDriver driver, final String xpath) {
+		
+		click_operation(driver, xpath);
+	}
 }
+
